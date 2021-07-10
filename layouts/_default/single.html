@@ -1,5 +1,7 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <div class="article">
+  {{- partial "language-selector.html" . }}
+
   <header>
     <div class="article-header">
       <h1>{{ .Title }}</h1>
@@ -43,4 +45,4 @@
     </div>
   </footer>
 </div><!-- .article -->
-{{ partial "footer.html" . }}
+{{ end }}

@@ -1,0 +1,3 @@
+staticDir = ["../static", "../images"]
+assetDir = "../assets"
+canonifyURLs = true

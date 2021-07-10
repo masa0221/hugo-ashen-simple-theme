@@ -46,7 +46,7 @@ a:hover {
 /**
  * header
  */
-.site-header { 
+.site-header {
   background: #F6F7F8;
   height: 60px;
   margin-bottom: 40px;
@@ -105,17 +105,31 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.article .content .heading {
+  text-decoration: none;
+  color: #303030;
+}
+
+.article .content .heading svg {
+  display: none;
+}
+
+.article .content .heading:hover svg {
+  display: inline-block;
+  fill: #747474;
+}
+
 .article .content ol,
 .article .content ul
 {
   padding-left: 40px;
 }
 
-.article .content a {
+.article .content a :not(.heading) {
   font-size: 14px;
 }
 
-.article .content a:hover {
+.article .content a:hover :not(.heading) {
   font-size: 14px;
 }
 
@@ -133,9 +147,9 @@ a:hover {
 .sidebar {
   width: 310px;
   float: right;
-  min-height:200px; 
+  min-height:200px;
   height: 200px;
-  height: auto !important; 
+  height: auto !important;
   overflow: hidden;
 }
 
@@ -153,6 +167,16 @@ a:hover {
   color: #747474;
   margin-bottom: 4px;
   padding-left: 5px;
+}
+
+a .inline-svg {
+  text-decoration: none;
+}
+
+.inline-svg {
+  display: inline-block;
+  width: 28px;
+  height: 32px;
 }
 
 /**
@@ -266,7 +290,7 @@ a:hover {
 #site-footer {
   clear: left;
   padding-top: 10px;
-  min-height:50px; 
+  min-height:50px;
   height: 50px;
   padding: 25px 0px 0px 20px;
 
@@ -569,7 +593,7 @@ h4:before {
  * responsive styles
  */
 @media screen and (max-width: 950px) {
-  img { 
+  img {
     float: none;
   }
 
@@ -680,4 +704,3 @@ h4:before {
     padding: 10px 0px 10px 10px;
   }
 }
-

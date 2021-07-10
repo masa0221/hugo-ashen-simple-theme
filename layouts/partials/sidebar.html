@@ -1,4 +1,8 @@
 <div class="sidebar">
+  <div class="sidebar-content">
+    {{- partial "language-selector.html" . }}
+  </div>
+
   {{ with .Site.Params.adsense.sidebar }}
   <div class="sidebar-content">
     <div class="sidebar-header">
@@ -18,16 +22,16 @@
       <span>{{ .Site.Author.name }}</span>
       <div>
         {{ with .Site.Author.twitter }}
-        <a href="https://twitter.com/{{ . }}"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/{{ . }}" rel="noopener" target="_blank" class="inline-svg">{{ partial "fontawesome.html" "twitter-square"}}</a>
         {{ end }}
         {{ with .Site.Author.github }}
-        <a href="https://github.com/{{ . }}"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://github.com/{{ . }}" rel="noopener" target="_blank" class="inline-svg">{{ partial "fontawesome.html" "github-square" }}</a>
         {{ end }}
         {{ with .Site.Author.linkedin }}
-        <a href="https://www.linkedin.com/in/{{ . }}"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/{{ . }}" rel="noopener" target="_blank" class="inline-svg">{{ partial "fontawesome.html" "linkedin" }}</a>
         {{ end }}
         {{ with .Site.Author.tumblr }}
-        <a href="https://{{ . }}.tumblr.com/"><i class="fa fa-tumblr-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://{{ . }}.tumblr.com/" rel="noopener" target="_blank" class="inline-svg">{{ partial "fontawesome.html" "tumblr-square" }}</a>
         {{ end }}
       </div>
     </div>
@@ -54,8 +58,8 @@
       <span>RSS</span>
     </div>
     <div id="rss">
-      <a href="{{ or .RSSLink .Site.RSSLink }}" type="application/rss+xml" target="_blank">
-        <i class="fa fa-rss-square fa-2x" aria-hidden="true"></i>
+      <a href="{{ $.Site.BaseURL }}index.xml" type="application/rss+xml" rel="noopener" target="_blank" class="inline-svg">
+        {{ partial "fontawesome.html" "rss-square" }}
       </a>
     </div>
   </div>

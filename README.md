@@ -1,25 +1,27 @@
+![Deploy to github pages](https://github.com/koooge/hugo-theme-geppaku/workflows/Test/badge.svg)
+
 Geppaku
 =============================
 Geppaku is bluish white theme for [Hugo](http://gohugo.io/).
 
-Note that it is not in the "Seppuku".  
-I'm not Samurai.  
+Note that it is not in the "Seppuku".
+I'm not Samurai.
 
-Please check [http://2626.info/](http://2626.info/), if you are interested in this theme.
+Please check [https://koooge.github.io/hugo-theme-geppaku/](https://koooge.github.io/hugo-theme-geppaku/), if you are interested in this theme.
 
 ## Screenshot
 ### Index page
-![list](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/list.png)
+![list](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/list.png)
 
 ### Post page
-![post](https://github.com/masa0221/hugo-theme-geppaku/blob/master/images/screenshot.png)
+![post](https://github.com/koooge/hugo-theme-geppaku/blob/master/images/screenshot.png)
 
 ## Installation
 
 ```
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/masa0221/hugo-theme-geppaku hugo-theme-geppaku
+$ git clone https://github.com/koooge/hugo-theme-geppaku hugo-theme-geppaku
 ```
 See the Hugo documentation for more information.
 
@@ -31,9 +33,10 @@ Example of config.toml file:
 baseurl = "http://your-site-here/"
 languageCode = "en-us"
 title = "your site title"
-theme= "hugo-theme-geppaku"
+theme = "hugo-theme-geppaku"
 googleAnalytics = ""
 disqusShortname = ""
+# enableRobotsTXT = true
 
 [author]
     # If you want to display author information set these
@@ -68,8 +71,10 @@ disqusShortname = ""
         sidebar = "adsense/sidebar.html"
         content = "adsense/content.html"
 ```
-You can delete optional parameter.  
+You can delete optional parameter.
 Please delete unnecessary parameter.
+
+- :white_check_mark: [Multilingual Mode](https://gohugo.io/content-management/multilingual/)
 
 ### Post
 
@@ -93,9 +98,3 @@ tags = [
 +++
 Hello Hugo!
 ```
-
-### Example
-
-Please check sample.  
-[https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite](
-https://github.com/masa0221/hugo-theme-geppaku/tree/master/exampleSite)
